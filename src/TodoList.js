@@ -18,7 +18,7 @@ class TodoList extends Component {
         };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleBtnClick = this.handleBtnClick.bind(this);
-        this.handleDelete = this.handleDelete.bind(this)
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
 
@@ -26,10 +26,6 @@ class TodoList extends Component {
      * 处理按钮点击
      */
     handleBtnClick() {
-        // this.setState({
-        //     list: [...this.state.list, this.state.inputValue],
-        //     inputValue: ""
-        // });
         this.setState((prevState) => ({
             list: [...prevState.list, prevState.inputValue],
             inputValue: ""
@@ -42,9 +38,6 @@ class TodoList extends Component {
      * @param event
      */
     handleInputChange(event) {
-        // this.setState({
-        //     inputValue: event.target.value
-        // })
         const value = event.target.value;
         this.setState(() => ({
             inputValue: value
@@ -56,9 +49,6 @@ class TodoList extends Component {
      * @param index
      */
     handleDelete(index) {
-        // const list = [...this.state.list];
-        // list.splice(index, 1);
-        // this.setState({list})
         this.setState((prevState) => {
             const list = [...prevState.list];
             list.splice(index, 1);

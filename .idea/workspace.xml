@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="04c225b1-7b45-4ab0-aa11-28b9e5c757d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoList.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +22,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TodoList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+            <state relative-caret-position="420">
+              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#TodoList#0" />
               </folding>
             </state>
           </provider>
@@ -36,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TodoItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state relative-caret-position="567">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -173,7 +171,11 @@
       <workItem from="1543202086469" duration="2887000" />
       <workItem from="1543213090945" duration="470000" />
       <workItem from="1543214026577" duration="24000" />
-      <workItem from="1543217870989" duration="3658000" />
+      <workItem from="1543217870989" duration="3912000" />
+      <workItem from="1543280598956" duration="223000" />
+      <workItem from="1543281748635" duration="13000" />
+      <workItem from="1543281876379" duration="3626000" />
+      <workItem from="1543286888588" duration="1031000" />
     </task>
     <task id="LOCAL-00001" summary="[feat]: initial commit">
       <created>1542957428969</created>
@@ -182,27 +184,34 @@
       <option name="project" value="LOCAL" />
       <updated>1542957428969</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[feat]: standard code">
+      <created>1543225631636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543225631636</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24508000" />
+    <option name="totallyTimeSpent" value="29655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" weight="0.32928678" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49744898" visible="true" weight="0.21205357" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49489796" visible="true" weight="0.21205357" />
       <window_info id="npm" order="2" sideWeight="0.5017065" side_tool="true" weight="0.21205357" />
-      <window_info id="Structure" order="3" sideWeight="0.502551" side_tool="true" visible="true" weight="0.21205357" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info id="Structure" order="3" sideWeight="0.50510204" side_tool="true" weight="0.21205357" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32935154" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32935154" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.33105803" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.33105803" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.5135624" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -238,7 +247,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[feat]: initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat]: initial commit" />
+    <MESSAGE value="[feat]: standard code" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]: standard code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js" />
@@ -265,18 +275,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TodoItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state relative-caret-position="567">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TodoList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="420">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#TodoList#0" />
           </folding>
         </state>
       </provider>
