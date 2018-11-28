@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import TodoItem from './TodoItem';
 
+
 /**
  * Item
  *
@@ -10,6 +11,7 @@ import TodoItem from './TodoItem';
 class TodoList extends Component {
     constructor(props) {
         super(props);
+        //当组件的state或者props发生改变的时候,render函数就会重新执行
         this.state = {
             //待办清单
             list: [],
@@ -43,6 +45,15 @@ class TodoList extends Component {
             inputValue: value
         }));
     };
+
+    // ref 直接获取 DOM 操作 ,不建议使用,
+    // 如果必须使用,在setState函数中,第二个参数用回调函数来写
+    // handleInputChange(){
+    //     const value = this.input.value;
+    //     this.setState(() => ({
+    //         inputValue: value
+    //     }));
+    // }
 
     /**
      * 删除
@@ -79,13 +90,20 @@ class TodoList extends Component {
         return (
             <Fragment>
                 <div>
+                    <label htmlFor="insertArea">输入内容</label>
                     <input
+                        id="insertArea"
+                        className="input-group-sm"
                         value={this.state.inputValue}
                         onChange={this.handleInputChange}
+                        // ref={(input) => {
+                        //     this.input = input
+                        // }}
                     />
                     <button className="red-btn" onClick={this.handleBtnClick}>add</button>
                 </div>
                 <ul>{this.getTodoItems()}</ul>
+
             </Fragment>
         );
     }
