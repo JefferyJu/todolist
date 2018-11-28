@@ -23,6 +23,70 @@ class TodoList extends Component {
         this.handleDelete = this.handleDelete.bind(this);
     }
 
+    /**
+     * componentWillMount()在组件即将被挂载到页面的时候自动执行
+     */
+    componentWillMount() {
+        console.log("componentWillMount()");
+    }
+
+    // 父组件通过属性的形式向子组件传递参数
+    // 子组件通过props接收父组件传递的参数
+    // render在props 和state 发生改变的时候自动调用
+    render() {
+        console.log("parent --> render()");
+        return (
+            <Fragment>
+                <div>
+                    <label htmlFor="insertArea">输入内容</label>
+                    <input
+                        id="insertArea"
+                        className="input-group-sm"
+                        value={this.state.inputValue}
+                        onChange={this.handleInputChange}
+                        // ref={(input) => {
+                        //     this.input = input
+                        // }}
+                    />
+                    <button className="red-btn" onClick={this.handleBtnClick}>add</button>
+                </div>
+                <ul>{this.getTodoItems()}</ul>
+
+            </Fragment>
+        );
+    }
+
+    /**
+     * componentDidMount()组件被挂载到页面之后,自动执行
+     */
+    componentDidMount() {
+        console.log("componentDidMount()");
+    }
+
+    /**
+     * shouldComponentUpdate()组件被更新之前,他会自动被执行
+     */
+    shouldComponentUpdate() {
+        console.log("shouldComponentUpdate()");
+        // true 则更新组件 false 则不更新
+        return true;
+    }
+
+    /**
+     * 组件被更新之前,他会自动执行,他在shouleComponentUpdate之后被执行
+     * 如果shouldComponentUpdate 返回true 他才执行
+     * 返回false,不会执行
+     */
+    componentWillUpdate() {
+        console.log("componentWillUpdate()");
+    }
+
+    /**
+     * 组件更新完成之后,他会被执行
+     */
+    componentDidUpdate() {
+        console.log("componentDidUpdate()");
+    }
 
     /**
      * 处理按钮点击
@@ -82,30 +146,6 @@ class TodoList extends Component {
                 />);
             })
         )
-    }
-
-    // 父组件通过属性的形式向子组件传递参数
-    // 子组件通过props接收父组件传递的参数
-    render() {
-        return (
-            <Fragment>
-                <div>
-                    <label htmlFor="insertArea">输入内容</label>
-                    <input
-                        id="insertArea"
-                        className="input-group-sm"
-                        value={this.state.inputValue}
-                        onChange={this.handleInputChange}
-                        // ref={(input) => {
-                        //     this.input = input
-                        // }}
-                    />
-                    <button className="red-btn" onClick={this.handleBtnClick}>add</button>
-                </div>
-                <ul>{this.getTodoItems()}</ul>
-
-            </Fragment>
-        );
     }
 }
 
